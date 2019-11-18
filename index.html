@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <p class="heading">3 Payment</p>
+        <form action="/action_page.php">
+            <fieldset>
+
+                <legend><img src="lock-icon.png">&nbsp;&nbsp;Credit / Debit Card Details</legend>
+                <div class="formgrid">
+                    <label id="cardNumber">*&nbsp;Card&nbsp;Number
+                        <input type="text" maxlength="16" size="16" placeholder="Enter Card Number" required>
+                    </label>
+                    <label>*&nbsp;Expiration&nbsp;Date
+                        <input type="text" placeholder="MM / YY" required>
+                    </label>
+                    <label>*&nbsp;Security&nbsp;Code (CVV)
+                        <img src="question-mark.jpg" id="question-mark">
+                        <input type="text" placeholder="XXX" required>
+                    </label>
+                    <label id="cardHolder">*&nbsp;Card&nbsp;Holder&nbsp;Name
+                        <input type="text" placeholder="Enter Card Holder Name" required>
+                    </label>
+                    <input type="submit" id="submitButton" value="SUBMIT" required>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
